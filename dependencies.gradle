@@ -1,0 +1,51 @@
+ext {
+    supportLibraryVersion = '23.4.0'
+    daggerVersion = '2.0.2'
+    rxVersion = '1.1.0'
+    retrofitVersion = '2.0.2'
+    okHttpVersion = '3.2.0'
+    ankoVersion = '0.8.2'
+    powerMockVersion = '1.6.4'
+    kovenantVersion = '3.2.2'
+
+    dependencies = [
+
+            kotlin               : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            kotlinReflect        : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+
+            appCompat            : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportV4            : "com.android.support:support-v4:$supportLibraryVersion",
+            supportDesign        : "com.android.support:design:$supportLibraryVersion",
+            percent              : "com.android.support:percent:$supportLibraryVersion",
+            dataBinding          : "com.android.databinding:compiler:2.0.0",
+
+            anko                 : "org.jetbrains.anko:anko-sdk15:$ankoVersion",
+            ankoSupport          : "org.jetbrains.anko:anko-support-v4:$ankoVersion",
+            ankoAppCompat        : "org.jetbrains.anko:anko-appcompat-v7:$ankoVersion",
+
+            kovenantCore         : "nl.komponents.kovenant:kovenant-core:$kovenantVersion",
+            kovenantUi           : "nl.komponents.kovenant:kovenant-ui:$kovenantVersion",
+            kovenantAndroid      : "nl.komponents.kovenant:kovenant-android:$kovenantVersion",
+
+            daggerCompiler       : "com.google.dagger:dagger-compiler:$daggerVersion",
+            dagger               : "com.google.dagger:dagger:$daggerVersion",
+            javaXAnnotations     : "org.glassfish:javax.annotation:10.0-b28",
+
+            rxKotlin             : "io.reactivex:rxkotlin:0.40.1",
+            rxJava               : "io.reactivex:rxjava:$rxVersion",
+            rxAndroid            : "io.reactivex:rxandroid:$rxVersion",
+
+            retrofit             : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConverterGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitAdapterRxJava: "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion",
+            okhttp               : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            okhttpLogging        : "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+
+            glide                : "com.github.bumptech.glide:glide:3.6.1",
+
+            jUnit                : "junit:junit:4.12",
+            powerMock            : "org.powermock:powermock-module-junit4:$powerMockVersion",
+            powerMockito         : "org.powermock:powermock-api-mockito:$powerMockVersion",
+            hamcrest             : "org.hamcrest:hamcrest-all:1.3",
+    ]
+}

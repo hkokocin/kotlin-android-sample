@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="de.kokocinski.ankopre.main.MainViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    app:layout_aspectRatio="150%"
+                    app:layout_widthPercent="100%" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="@dimen/text_margin"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowRadius="10"
+                    android:text="@{viewModel.title}"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse" />
+
+            </android.support.percent.PercentFrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_margin"
+                android:text="@{viewModel.text}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>
